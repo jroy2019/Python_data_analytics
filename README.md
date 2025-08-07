@@ -51,7 +51,7 @@ plt.show()
 - 2. Excel experienced a significant increase in demand around November, reversing its earlier downward trend.
 - 3. Python, Tableau, and SAS showed relatively stable demand throughout 2023, with only minor fluctuations. They continue to be essential skills for data analytics.
 
-## 3. How well do jobs and skills pay for Data analysts?
+## 3. How well do jobs and skills pay for Data Analysts?
 
 ### What are the expected salaries for popular data roles?
 
