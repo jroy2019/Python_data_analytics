@@ -53,7 +53,7 @@ plt.show()
 
 ## 3. How well do jobs and skills pay for Data analysts?
 
-### What are the expected salaries for popular data jobs?
+### What are the expected salaries for popular data roles?
 
 I visualized the expected salaries for three data roles, Data Analyst, Data Scientist, and Data Engineer, at both junior and senior levels in the United States. This analysis can help job seekers better understand potential earnings and plan their future career trajectories within the data field.
 
