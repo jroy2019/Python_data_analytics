@@ -103,4 +103,21 @@ plt.show()
 
 - 3. There is a clear gap between the salaries of the highest-paying skills and the most in-demand skills. To maximise earning potential, it’s beneficial to develop a diverse skill set that includes both high-demand foundational skills and specialised high-paying skills. 
 
+## 4. What are the most optimal skills to know for a Data Analyst.
+
+I visualised the most optimal skills for Data Analysts based on demand and expected salary, providing job seekers with guidance on prioritising skills that are both in high demand and offer competitive pay.
+
+### Data Visualisation
+
+```python
+sns.scatterplot(data=df_plot, x='skill_percentage', y='median_salary', hue='technology', palette='tab10', s=100, alpha=0.7)
+
+plt.show()
+```
+
+### Results
+
+![Optimal Skills for Data Analysts (USA 2023)](2_Data_Analytics_Project/images/optimal_skills.png)
+
+### Insights
 
