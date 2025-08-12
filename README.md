@@ -51,11 +51,11 @@ plt.show()
 - 2. Excel experienced a significant increase in demand around November, reversing its earlier downward trend.
 - 3. Python, Tableau, and SAS showed relatively stable demand throughout 2023, with only minor fluctuations. They continue to be essential skills for data analytics.
 
-## 3. How well do jobs and skills pay for Data Analysts?
+## 3. How well do Data Analyst's get paid compared to other data roles and based on their skills?
 
-### What are the expected salaries for popular data roles?
+### What are the expected salaries of Data analyst compare to other popular data roles
 
-I visualized the expected salaries for three data roles, Data Analyst, Data Scientist, and Data Engineer, at both junior and senior levels in the United States. This analysis can help job seekers better understand potential earnings and plan their future career trajectories within the data field.
+I visualized the expected salaries for three data roles, Data Analyst, Data Scientist, and Data Engineer, at both junior and senior levels in the United States. This analysis can help Data Analysts better understand potential earnings and plan their future career trajectories within the data field.
 
 ### Data Visualisation
 
@@ -69,10 +69,38 @@ plt.show()
 ![Expected Salaries of Data Jobs in 2023](2_Data_Analytics_Project/images/expected_salary.png)
 
 ### Insights
-- 1. Data Scientists are expected to earn more than both Data Engineers and Data Analysts.
-- 2. Senior-level data roles offer higher salaries than their respective junior-level positions, as expected.
+- 1.Senior-level data roles offer higher salaries than their respective junior-level positions, as expected.
+- 2. Data Scientists are expected to earn more than both Data Engineers and Data Analysts
 - 3. Senior Data Analysts have a lower expected salary compared to Junior Data Scientists and Junior Data Engineers
 
+### How do Data Analysts Get Paid Based on Their Skills?
 
+I visualised the expected salaries for top-paying skills and most in-demand skills among Data Analysts. This can help both current and aspiring Data Analysts prioritise which skills to learn for maximum career and salary impact.
+
+### Data Visualisation
+
+```python
+
+fig, ax = plt.subplots(2,1)
+
+for i, col in enumerate(df_median_count):
+    if col == 'median_salary':
+        df_plot = df_median_count.sort_values(by=col, ascending=False).head(10)
+    else:
+        df_plot = df_median_count.sort_values(by=col, ascending=False).head(10).sort_values(by='median_salary', ascending=False)
+    sns.barplot(data=df_plot, x=df_plot['median_salary'], y=df_plot.index, ax=ax[i], hue='median_salary', palette='light:b')
+
+plt.show()
+``` 
+
+### Results 
+![Expected Salary of Data Analytics Skills](2_Data_Analytics_Project/images/top_paying_in_demand_skills.png)
+
+### Insights
+- 1. The top chart shows that specialised skills such as 'dplyr', 'gitlab', and 'hugging face' are associated with higher salaries, in some cases reaching up to $200K. This suggests that advanced technical skills can significantly increase a Data Analyst’s earning potential.
+
+- 2. Foundational skills like 'Excel', 'PowerPoint', and 'SQL' remain highly in demand but are not linked to the highest salaries. This highlights their importance for securing data analysis roles, even if they do not directly command top pay.
+
+- 3. There is a clear gap between the salaries of the highest-paying skills and the most in-demand skills. To maximise earning potential, it’s beneficial to develop a diverse skill set that includes both high-demand foundational skills and specialised high-paying skills. 
 
 
