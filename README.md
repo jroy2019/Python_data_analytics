@@ -1,3 +1,32 @@
+# The Overview
+Welcome to my analysis. This project analyzed the U.S. job market for Data Analysts using 2023 job posting data. It delves into the top-paying and in-demand skills to help identify optimal job oppurtunties for Data Analysts.
+
+
+The dataset was sourced from [Luke Barousse's Python course](https://www.youtube.com/watch?v=wUSDVGivd-8) and contains detailed information on job titles, required skills, and salary ranges. Using a series of Python scripts, I investigated key questions around skill demand, salary trends, and the intersection between market demand and pay in data analytics.
+
+# The Questions
+
+Below are the question I answer in my project:
+
+1. What are the most in-demand skills for the 3 most popular data jobs?
+2. How do in-demand skills trending for Data Analysts?
+3. How well do Data Analyst's get paid compared to other data roles, and based on their skills?
+4. What are the most optimal skills to know for a Data Analyst.
+
+# Tools I Used
+- Python – The backbone of my analysis, enabling me to process data and uncover critical insights.  
+  I used the following Python libraries:  
+    - Pandas – For data cleaning, manipulation, and analysis.  
+    - Matplotlib – For creating visualizations.  
+    - Seaborn – For enhancing the style and clarity of visualizations.  
+
+
+- Jupyter Notebook – To run Python scripts while integrating notes, code, and outputs in a single, interactive environment.
+
+- Visual Studio Code – My primary editor for writing and executing Python scripts.
+
+- Git & GitHub – For version control and sharing my Python code and analysis.
+
 # The Analysis
 
 ## 1. What are the most in-demand skills for the 3 most popular data jobs?
@@ -22,14 +51,12 @@ for i, job_title in enumerate(job_titles):
 
 ### Results
 
-![Visualisation of Top 5 Skills for Data Jobseekers](2_Data_Analytics_Project/images/top_5_skills.png)
+![Visualisation of Top 5 Skills for 3 Data Jobs](2_Data_Analytics_Project/images/top_5_skills.png)
 
 ### Insights 
-- Python is a versatile and highly in-demand skill across all three major data roles. It is most prominently required for Data Scientists (72% of job postings) and Data Engineers (65%), compared to Data Analysts (27%).
-
-- SQL is the most requested skill for Data Analysts (50%) and Data Engineers (68%). For Data Scientists, Python takes the lead, appearing in over 72% of job postings.
-
-- Data Engineers tend to require more specialized technical skills such as AWS, Azure, and Spark, while Data Analysts and Data Scientists are expected to be proficient in more general data analysis and management tools like R, Excel, and Tableau.- 
+- 1. Python is a versatile and highly in-demand skill across all three major data roles. It is most prominently required for Data Scientists (72% of job postings) and Data Engineers (65%), compared to Data Analysts (27%).
+- 2. SQL is the most requested skill for Data Analysts (50%) and Data Engineers (68%). For Data Scientists, Python takes the lead, appearing in over 72% of job postings.
+- 3. Data Engineers tend to require more specialized technical skills such as AWS, Azure, and Spark, while Data Analysts and Data Scientists are expected to be proficient in more general data analysis and management tools like R, Excel, and Tableau.- 
 
 ## 2. How do in-demand skills trending for Data Analysts?
 
@@ -44,7 +71,7 @@ plt.show()
 ```
 
 ### Results
-![Visualisation of Top 5 Data Analytics Skill over 2023](2_Data_Analytics_Project/images/data_analytics_skills_overtime.png)
+![Visualisation of Top 5 Data Analytics Skill over 2023](2_Data_Analytics_Project/images/data_analyst_skills_overtim_colorcoded.png)
 
 ### Insights
 - 1. SQL remains the most popular tool for Data Analysts, but its demand has been gradually declining over time.
@@ -69,7 +96,7 @@ plt.show()
 ![Expected Salaries of Data Jobs in 2023](2_Data_Analytics_Project/images/expected_salary.png)
 
 ### Insights
-- 1.Senior-level data roles offer higher salaries than their respective junior-level positions, as expected.
+- 1. Senior-level data roles offer higher salaries than their respective junior-level positions, as expected.
 - 2. Data Scientists are expected to earn more than both Data Engineers and Data Analysts
 - 3. Senior Data Analysts have a lower expected salary compared to Junior Data Scientists and Junior Data Engineers
 
@@ -120,4 +147,37 @@ plt.show()
 ![Optimal Skills for Data Analysts (USA 2023)](2_Data_Analytics_Project/images/optimal_skills.png)
 
 ### Insights
+
+- 1. Programming tools like 'Python' and 'SQL' are among the most valuable skills for Data Analysts. 'Python' in particular is important, as it is both in high demand and associated with higher salaries.
+- 2. Traditional data analysis/visualisation tools such as 'PowerPoint' and 'Word' tend to be low-demand and low-salary, while 'Excel' remains high-demand but low-salary. In contrast, powerful visualisation tools like 'Power BI' and 'Tableau' are more in demand and offer better pay. Learning one of these can significantly boost earning potential.
+- 3. Cloud computing and database tools such as 'Oracle' and 'SQL Server' tend to pay well but are not as highly sought after. These skills are best learned after mastering 'Python' and 'Tableau'. 
+
+# What I Learned
+
+Throughout this project, I deepened my understanding of the data job market and enhanced my technical skills in Python, especially in data wrangling and visualisation. Here are a few specific things I learned:
+
+- **Advanced Python Usage** – Utilising libraries such as Pandas for data wrangling, and Seaborn and Matplotlib for data visualisation, along with other Python libraries, made it easier to perform complex analyses.  
+- **Importance of Data Wrangling** – I learned that there are multiple ways to wrangle data in Python, each with its advantages and drawbacks, and that it’s important to create workflows best suited for the specific analysis at hand.  
+- **Strategic Skill Analysis** – This project emphasised the importance of aligning one’s skills with market demand. Python and powerful data visualisation techniques are among the most optimal skills for Data Analysts in 2025.  
+
+# Challenges I Faced:
+
+The project was not without challenges, but it provided valuable learning opportunities:
+
+- **Data Inconsistencies** – Handling missing or inconsistent data entries required careful consideration and thorough techniques to ensure the integrity of the analysis.  
+- **Effective Data Visualisation** – Creating plots from a large, messy dataset that could speak for themselves was challenging. I often had to address overlaps and clutter to ensure insights were conveyed clearly.  
+
+# Conclusion
+
+This project provided a comprehensive look at the U.S. job market for Data Analysts in 2023, combining skill demand, salary trends, and optimal skill strategies. Through detailed analysis and visualisation, I was able to identify the most in-demand skills, track how these skills are trending over time, and understand how specific skills impact earning potential.  
+
+Key takeaways include:  
+
+- **Python and SQL** remain foundational and highly valuable for Data Analysts in 2025, offering both high demand and competitive salaries.  
+- **Specialized skills** such as advanced data visualisation and cloud computing can significantly increase earning potential, even if they are less common in job postings.    
+- **Strategic skill alignment** is essential: balancing foundational, in-demand skills with higher-paying specialized skills can maximize both career opportunities and salary growth.  
+
+Overall, this analysis strengthened my technical skills in Python and data visualisation while providing practical insights into the data analytics job market, helping both aspiring and current Data Analysts make informed decisions about which skills to develop and prioritize.
+
+
 
